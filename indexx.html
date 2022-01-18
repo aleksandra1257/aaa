@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Vezba</title>
+<style>
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-content: baseline;            
+    }
+    .inner_container{
+        display: flex;
+        flex-direction: row;
+    }
+    span {
+        height: 150px;            
+        margin-left: 4px;
+        font-size: x-large;            
+    }
+    .w25{
+        width: 25%;
+        border-color: red;
+    }
+    .w75{
+        flex-grow: 4;
+        border-color: orange;
+    }
+    .p{                                 /* Probati i sa p. Nece raditi. Zasto?/
+        width: 100%;
+        border-color:green;
+        font-family: Brush Script MT; / Some fancy texting*/
+    }
+    body div div *{
+        border: solid 5px;         
+    }
+    
+    body div div * :not(p){     /* Jos po neki fancy css fazoni */    
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+    .img {
+        border-color: blue;            
+    }
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner_container">
+            <span class="w25"> Hellou</span>        
+            <span class="w75"> 2+2=5 </span>
+        </div>
+        <div class="inner_container">
+            <p class="p"> Fancy text </p>
+        </div>
+        <div class="inner_container">
+            <img src="slika.jpg" height="100px" width="100%" class="img">
+        </div>
+    </div>
+
+</body>
+</html>
